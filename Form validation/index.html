@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+        <style>
+            .error_form{color: red; font-size: 14px;}
+        </style>   
+    </head>
+    <body>
+        <form id="myForm"  action="form_success.html">
+            <table>
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" id="username" required></td>
+                    <td><span class="error_form" id="username_error_msg"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" id="password" required></td>
+                    <td><span class="error_form" id="password_error_msg"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Password Again</td>
+                    <td><input type="password" id="password_again" required></td>
+                    <td><span class="error_form" id="password_again_error_msg"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" id="email" required></td>
+                    <td><span class="error_form" id="email_error_msg"></span></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Submit"></td>
+                    <td></td>
+                </tr>
+            </table>
+
+        </form>
+
+    </body>
+</html>
